@@ -1,0 +1,233 @@
+/*
+Google fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-position: initial;
+    font-size: 17px;
+    line-height: 1.6;
+    color: rgb(211, 209, 209);
+    background-attachment: fixed;
+}
+
+a {
+    font-weight: 500;
+}
+
+h1
+h2
+h3
+h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.header-area{
+    padding: 45px;
+}
+
+/*Basic CSS*/
+.container{
+    padding: 0 15%;
+}
+.theme-button{
+    text-decoration: none;
+    background-color: #00c0ff;
+    color: white;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.theme-button:hover{
+    background-color: white;
+    color: #00c0ff;
+}
+
+.theme-button-small{
+    text-decoration: none;
+    background-color: #00c0ff;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+.theme-button-small:hover{
+    background-color: white;
+    color: #00c0ff;
+}
+.section-heading{
+    text-align: center;
+}
+.section-heading h3{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #00c0ff;
+}
+.section-heading h2{
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+text-decoration: none;
+}
+.logo h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.main-nav a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+.main-nav a:hover{
+    color: #00c0ff;
+}
+.hero-area{
+    padding: 80px;
+}
+.hero-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text h2{
+    font-size: 35px;
+    color: white;
+}
+.hero-text p{
+    font-size: 17px;
+}
+.hero-image{
+    width: 500PX; 
+}
+
+
+/*About Area*/
+.about-area{
+    background-color: #1e1345;
+    padding: 100px 0;
+}
+.about-content{
+    display: flex  ;
+    align-items: center;
+}
+.about-image{
+    flex: 1;
+}
+.about-text{
+    flex: 1;
+}
+.about-text h2{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.service-area{
+    padding: 100px 0;
+}
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.singel-service{
+    background-color:#3a2b71 ;
+    padding: 30px;
+}
+.singel-service h3{
+    font-size: 26px;
+    color: white;
+    margin-bottom: 15px;
+}
+/* contact area CSS*/
+.contact-area{
+    background-color: #1e1345;
+    padding: 100px 0;
+}
+.contact-content form{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+     "f l"
+     "e p"
+     "m m"
+     "s s"  ;
+}
+#first{
+    grid-area: f;
+}
+#last{
+    grid-area: l;
+}
+#email{
+    grid-area: e;
+}
+#phone{
+    grid-template-areas: p;
+}
+#message{
+    grid-area: m;
+}
+#submit{
+    grid-area: s;
+    background-color: #3a2b71;
+    cursor: pointer;
+}
+
+.contact-content input{
+    font-size: 17px;
+    padding: 12px;
+    background-color:transparent;
+    border: 1px solid #3a2b71;
+    color: white;
+}
+.contact-content textarea{
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px;
+    background-color:transparent;
+    border: 1px solid #3a2b71;
+    color: white;    
+}
+/*Footer Area CSS*/
+
+.footer-area{
+    padding: 25px 0;
+    text-align: center;
+    background-color:#1e1345;
+    border-top: 1px solid #3a2b71 ;
+}
